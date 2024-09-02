@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Light Grayish Blue */
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background: linear-gradient(135deg, #1c1d6b, #a0097a); /* Gradient from Royal Blue to Forest Green */
+    color: #ffffff; /* White */
+    min-height: 100vh;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar-header h3 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ffffff; /* White */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.sidebar ul li a {
+    color: #ffffff; /* White */
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li a.active {
+    background: linear-gradient(135deg, #5d3fd3, #1e4d2b); /* Gradient from Majestic Purple to Peacock Green */
+    border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+    background: linear-gradient(135deg, #5d3fd3, #1e4d2b); /* Gradient from Majestic Purple to Peacock Green */
+    border-radius: 5px;
+}
+
+.sidebar-footer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar-footer a {
+    color: #ffffff; /* White */
+    text-decoration: none;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #1c1d6b, #228b22); /* Gradient from Royal Blue to Forest Green */
+    border-radius: 5px;
+}
+
+.sidebar-footer a:hover {
+    background: linear-gradient(135deg, #2c3d91, #1e6b2b); /* Slightly Different Gradient with Deeper Tones */
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #ffffff, #d3d3e2); /* Gradient from White to Pale Lilac */
+    padding: 10px 20px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.navbar-left input {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ecf0f1; /* Light Silver */
+    border: 1px solid #bdc3c7; /* Grayish */
+    width: 300px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right span {
+    margin-right: 20px;
+    color: #0b3d91; /* Dark Cobalt Blue */
+}
+
+.profile-img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.username {
+    font-weight: bold;
+    color: #0b3d91; /* Dark Cobalt Blue */
+}
+
+/* Dashboard content styles */
+.dashboard-content h1 {
+    color: #0b3d91; /* Dark Cobalt Blue */
+}
+
+/* Accent colors for charts, icons, etc. */
+.chart, .icon {
+    color: #af69ee; /* Amethyst */
+    border-color: #af69ee;
+}
+
+.chart.secondary, .icon.secondary {
+    color: #ffd700; /* Gold */
+    border-color: #ffd700;
+}
